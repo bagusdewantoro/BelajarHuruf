@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhira Belajar Huruf</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -10,7 +10,7 @@
   <body>
     <h1>Dhira Belajar Huruf</h1>
     <div class="masukkanHuruf">
-      <p>Ketik di bawah yaa kalau mau ganti: </p><input type="text" id="gantiArray" value="Dominikus">
+      <p>Ketik di bawah yaa kalau mau ganti: </p><input type="text" id="gantiArray" value="DHIRA">
       <!-- Di bawah ini masih gagal caranya
       Aktifkan jika ingin mengacak: <input type="checkbox" id="acak">
       -->
@@ -70,7 +70,7 @@
           listTombol();
         } else {
           let para = document.createElement('p');
-          let menang = document.createTextNode("Selesai!");
+          let menang = document.createTextNode("HEBAT! yeayy!");
           para.appendChild(menang);
           while (generateHuruf.firstChild) generateHuruf.removeChild(generateHuruf.firstChild);
           generateHuruf.appendChild(para);
@@ -84,7 +84,15 @@
 
       // fungsi salah
       const salah = () => {
-        salahKlik.textContent = 'Hihi salah, hayo mandi...';
+        const pilihan = [
+          "Hihi salah, hayo mandi...",
+          "Asli lhoo,, tuuttt,, coba lagi ya",
+          "Pijitin bapak yaa..",
+          "Dihirup yaa",
+          "Hemmm, aroma lemonn"
+        ];
+        const kontenSalah = Math.floor(Math.random() * pilihan.length)
+        salahKlik.textContent = pilihan[kontenSalah];
       };
 
       // fungsi generete list tombol dari seluruh item di daftar1
