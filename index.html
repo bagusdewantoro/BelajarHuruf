@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -83,12 +83,13 @@
       // fungsi betul
       const betul = () => {
         const choice = [
-          "Yeay, boleh guling-guling",
+          "Yeayy, kamu boleh nulis cyrillic alphabet sampai pagi",
           "Asli lhoo,, tuuttt,, hebat",
           "Nanti dielus-elus yaa",
           "Dapet cium dari ibi",
-          "Hemmm, wangi melatii",
-          "Dape cium dari bake"
+          "Dapet cium dari bake",
+          "Dapet cium dari Naya",
+          "Asikk, bisa main АЗБУКА"
         ];
         const kontenBetul = Math.floor(Math.random() * choice.length)
         salahKlik.textContent = choice[kontenBetul];
@@ -137,11 +138,11 @@
       // fungsi salah
       const salah = () => {
         const pilihan = [
-          "Hihi salah, hayo mandi...",
-          "Coba lagi ya",
+          "Hihi salah, hayo mandi lagi..",
+          "Coba lagi yaa",
           "Pijitin bapak yaa..",
-          "Dihirup yaa",
-          "Hemmm, aroma lemonn"
+          "Wahh ternyata masih noob",
+          "Hayoo kamu akan dimakan nyanyann"
         ];
         const kontenSalah = Math.floor(Math.random() * pilihan.length);
         salahKlik.style.color = 'red';
